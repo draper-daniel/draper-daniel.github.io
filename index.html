@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CodeAcademy Cheatsheet Project: HTML/CSS</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>CodeAcademy Cheatsheet Project: HTML/CSS</h1>
+        <p>In this project I'm going to design a webpage in HTML and CSS to provide guidance for a topic I've learned so far. To do this I'm going to use tables in html, CSS typography and design rules, as well as both html and styling of lists.</p>
+
+        <div name="unordered-lists">
+        <h2>Unordered Lists</h2>
+        <h3>HTML</h3>
+        <table>
+            <thead>
+              <th>Tag Name</th>
+              <th>Formatted Tags</th>
+              <th>Description</th>
+              <th>Input</th>
+              <th>Output</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Unordered List</td>
+                    <td><span class="code-text">&lt;ul&gt; <br> &lt;/ul&gt;</span></td>
+                    <td>These are the tags that surround an unordered list.</td>
+                    <td rowspan="2">
+                        <p class="code-lines"><span class="code-text">&lt;ul&gt;</span></p>
+                        <p id="indent-1" class="code-lines"><span class="code-text">&lt;li&gt;First thing on the list&lt;/li&gt;</span></p>
+                        <p id="indent-1" class="code-lines"><span class="code-text">&lt;li&gt;Second thing on the list&lt;/li&gt;</span></p>
+                        <p class="code-lines"><span class="code-text">&lt;/ul&gt;</span></p>
+                    </td>
+                    <td rowspan="2">
+                        <ul>
+                            <li>First thing on the list</li>
+                            <li>Second thing on the list</li>
+                        </ul>
+                      </td>
+                </tr>
+                <tr>
+                    <td>List Item</td>
+                    <td><span class="code-text">&lt;li&gt; <br> &lt;/li&gt;</span></td>
+                    <td>These tags are used for each item in the unordered list.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>CSS</h3>
+        <p>The default CSS for unordered lists is bullet points.<br>
+        This can be changed using the <span class="code-text">list-style-type:</span> attribute.<br>
+        There are some set examples shown in the table below, but we can also add in any string using <span class="code-text">list-style-type: "x"</span><br>
+        Examples of this are also shown below.</p>
+          <table>
+            <thead>
+                <tr>
+                  <th>Attribute</th>
+                  <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code-text">list-style-type: circle;</span></td>
+                    <td>
+                        <ul id="ul-circle">
+                            <li>First thing on the list</li>
+                            <li>Second thing on the list</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="code-text">list-style-type: square;</span></td>
+                    <td>
+                        <ul id="ul-square">
+                            <li>First thing on the list</li>
+                            <li>Second thing on the list</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="code-text">list-style-type: "- ";</span></td>
+                    <td>
+                        <ul id="ul-hypen">
+                            <li>First thing on the list</li>
+                            <li>Second thing on the list</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+          <p>[Notice how in the string bullet, there needs to be a space left after the bullet otherwise the list items begin immediately after the character.]</p>
+        </div>
+
+        <div id="ordered-lists">
+            <h2>Ordered Lists</h2>
+        <h3>HTML</h3>
+        <table>
+            <thead>
+              <th>Tag Name</th>
+              <th>Formatted Tags</th>
+              <th>Description</th>
+              <th>Input</th>
+              <th>Output</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ordered List</td>
+                    <td><span class="code-text">&lt;ol&gt; <br> &lt;/ol&gt;</span></td>
+                    <td>These are the tags that surround an ordered list.</td>
+                    <td rowspan="2">
+                        <p class="code-lines"><span class="code-text">&lt;ol&gt;</span></p>
+                            <!--need to think here how to get the text to look code-ish in the css-->
+                        <p id="indent-1" class="code-lines"><span class="code-text">&lt;li&gt;First thing on the list&lt;/li&gt;</span></p>
+                        <p id="indent-1" class="code-lines"><span class="code-text">&lt;li&gt;Second thing on the list&lt;/li&gt;</span></p>
+                        <p class="code-lines"><span class="code-text">&lt;/ol&gt;</span></p>
+                    </td>
+                    <td rowspan="2">
+                        <ol>
+                            <li>First thing on the list</li>
+                            <li>Second thing on the list</li>
+                        </ol>
+                      </td>
+                </tr>
+                <tr>
+                    <td>List Item</td>
+                    <td><span class="code-text">&lt;li&gt; <br> &lt;/li&gt;</span></td>
+                    <td>These tags are used for each item in an ordered list.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>CSS</h3>
+        <p>The default CSS for ordered lists is numbers starting at 1.<br>
+        This can also be changed using the <span class="code-text">list-style-type:</span> attribute.<br>
+        There are some set examples shown in the table below.</p>
+          <table>
+            <thead>
+                <tr>
+                  <th>Attribute</th>
+                  <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code-text">list-style-type: lower-roman;</span></td>
+                    <td>
+                        <ol id="ol-lower-roman">
+                            <li>First thing on the list</li>
+                            <li>Second thing on the list</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="code-text">list-style-type: upper-alpha;</span></td>
+                    <td>
+                        <ol id="ol-upper-alpha">
+                            <li>First thing on the list</li>
+                            <li>Second thing on the list</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span class="code-text">list-style-type: korean-hanja-formal;</span></td>
+                    <td>
+                        <ol id="ol-korean-hanja-formal">
+                            <li>First thing on the list</li>
+                            <li>Second thing on the list</li>
+                        </ol>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        
+    </body>
+</html>
